@@ -4,7 +4,7 @@
   "description": "Protractor Selenium Template",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "./node_modules/.bin/protractor conf.js"
   },
   "author": "Sridhar Bandi",
   "license": "MIT",
@@ -12,3 +12,4 @@
     "protractor": "^5.3.2"
   }
 }
+
