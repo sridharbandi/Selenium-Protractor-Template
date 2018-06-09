@@ -1,6 +1,6 @@
 browser.ignoreSynchronization = true;
-var GoogleSearchPage = require('./pageobjects/googlesearchpage');
-var SearchResultsPage = require('./pageobjects/searchresultspage');
+var GoogleSearchPage = require('../pageobjects/googlesearchpage');
+var SearchResultsPage = require('../pageobjects/searchresultspage');
 
 describe('Verify Google Title', function() {
     it('should have a title', async function() {
