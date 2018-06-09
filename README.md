@@ -29,5 +29,7 @@ Currently supported browsers in this template are
  * chrome
  * firefox
 
+### To Do
+ * Convert to ES6
 
 > Feel free to modify it to your own needs :)
