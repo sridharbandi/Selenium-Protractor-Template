@@ -11,7 +11,7 @@ var GoogleSearchPage = function () {
   };
 
   this.searchFor = async function (searchterm) {
-      await browser.sendKeys(searchterm, protractor.Key.RETURN);
+      await searchbox.sendKeys(searchterm, protractor.Key.RETURN);
   }
 };
 module.exports = new GoogleSearchPage();
