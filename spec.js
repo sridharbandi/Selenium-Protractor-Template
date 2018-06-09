@@ -1,9 +1,11 @@
 browser.ignoreSynchronization = true;
+var GoogleSearchPage = require('./pageobjects/googlesearchpage');
 
 describe('Verify Google Title', function() {
-    it('should have a title', function() {
-        browser.get('http://www.google.com/');
+    it('should have a title', async function() {
+        await GoogleSearchPage.open();
 
-        expect(browser.getTitle()).toEqual('Google');
+
+        expect(await GoogleSearchPage.title()).toEqual('Google');
     });
 });
