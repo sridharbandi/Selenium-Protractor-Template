@@ -29,7 +29,7 @@ Currently supported browsers in this template are
  * chrome
  * firefox
 
-### To Do
- * Convert to ES6
-
+Other templates you might be interested in 
+[Non Selenium Javascript Templates](https://github.com/sridharbandi/Non-Selenium-Javascript-Getting-Started-Examples), 
+[Selenium Javascript Templates](https://github.com/sridharbandi/Selenium-Javascript-Getting-Started-Examples)
 > Feel free to modify it to your own needs :)
