@@ -1,9 +1,10 @@
-var SearchResultsPage = function () {
-    var linkselenium = element(by.linkText('Selenium - Web Browser Automation'));
+class SearchResultsPage {
+  constructor() {
+    this.linkselenium = element(by.partialLinkText('Selenium'));
+  }
 
-    this.isSeleniumPresent = async function() {
-      return await linkselenium.isDisplayed();
-    };
-
-};
-module.exports = new SearchResultsPage();
+  async isSeleniumPresent() {
+    return await this.linkselenium.isDisplayed();
+  }
+}
+export default new SearchResultsPage();

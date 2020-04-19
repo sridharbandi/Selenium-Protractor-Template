@@ -1,17 +1,18 @@
-var GoogleSearchPage = function () {
+class GoogleSearchPage {
+    constructor() {
+        this.searchbox = element(by.name('q'));
+    }
 
-  var searchbox = element(by.id('lst-ib'));
+    async open() {
+        await browser.get('http://www.google.com');
+    }
 
-  this.open = async function () {
-      await browser.get('http://www.google.com');
-  };
+    async title() {
+        return await browser.getTitle();
+    }
 
-  this.title = async function () {
-      return await browser.getTitle();
-  };
-
-  this.searchFor = async function (searchterm) {
-      await searchbox.sendKeys(searchterm, protractor.Key.RETURN);
-  }
-};
-module.exports = new GoogleSearchPage();
+    async searchFor(searchterm) {
+        await this.searchbox.sendKeys(searchterm, protractor.Key.RETURN);
+    }
+}
+export default new GoogleSearchPage();
